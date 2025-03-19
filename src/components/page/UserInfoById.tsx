@@ -2,7 +2,9 @@ import { useGetUserProfile } from "@/hooks/profile.hooks"
 
 export default function UserInfoById({userInfo, userId}:any) {
 
-    const {data: userProfile} = useGetUserProfile(userId)
+    const {data: userProfile} = useGetUserProfile(userId);
+
+    
   return (
     <>
         <div className="post_header flex items-center border p-5 rounded-md mb-3">
